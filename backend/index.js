@@ -20,9 +20,7 @@ const app = express();
 
 
 // Alternatively, to allow requests from a specific origin:
- app.use(cors({
-  origin: 'https://mern-blog-1-jkq8.onrender.com'
- }));
+ app.use(cors());
 
 mongoose
   .connect(process.env.MONGO)
